@@ -29,6 +29,7 @@ function Header({setCategory,setSearchFilter}) {
        <br />
       <h3>Top Stories for You</h3>
       <ul className="list-unstyled" id="headerlist">
+      <li className="mr-3 mb-1 btn btn-secondary" onClick={() => handleClick("all")}>All</li>
         <li className="mr-3 mb-1 btn btn-secondary" onClick={() => handleClick("business")}>Business</li>
         <li className="mr-3 mb-1 btn btn-secondary" onClick={() => handleClick("entertainment")}>Entertainment</li>
         <li className="mr-3 mb-1 btn btn-secondary" onClick={() => handleClick("politics")}>Politics</li>

@@ -16,12 +16,18 @@ function App() {
   }, [category,searchFilter]);
 
   async function fetchData() {
+    let filteredData;
     try {
-      let filteredData = value.filter((data) =>
+      if(category=='all'){
+        filteredData=value;
+      }
+      else{
+      filteredData = value.filter((data) =>
       data.category === category &&
       (data.title.toLowerCase().includes(searchFilter.toLowerCase()) || 
        data.content.toLowerCase().includes(searchFilter.toLowerCase()))
       );
+    }
       setData(filteredData);
     } catch (error) {
       console.error("Error fetching data:", error);
