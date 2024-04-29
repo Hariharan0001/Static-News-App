@@ -3,7 +3,7 @@ import Body from "./Body";
 import Header from "./Header";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import value from "./Data"; // Assuming Data is a functional component
+import value from "./Data";
 import "./index.css";
 
 function App() {
@@ -47,7 +47,7 @@ function App() {
       </Row>
       <Row>
         <Col xs={12} md={12}>
-          <Body val={datas} /> {/* Render Body if data is available */}
+          <Body val={datas} />
         </Col>
       </Row>
     </Container>

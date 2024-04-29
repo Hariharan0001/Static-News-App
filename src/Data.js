@@ -1,18 +1,3 @@
-// import { useState, useEffect } from "react";
-
-// function Data({ req }) {
-//   console.log("from api", req);
-//   const [categories, setCategories] = useState('');
-//   const [filteredData, setFilteredData] = useState([]);
-//   useEffect(() => {
-//     console.log("from api", req);
-//     if (req) {
-//       setCategories(req);
-//       filterData(req);
-//     }
-//   }, [req]);
-
-//   let title = req["tittle"];
   const value = [
     {
       category: "business",
@@ -365,11 +350,4 @@
       dateAndTime: "17/03/2023, 11:58:52",
     },
   ];
-//   const filterData = (category) => {
-//     const filteredData = value.filter((data) => data.category === categories);
-//     setFilteredData(filteredData);
-//   };
-//   return  filteredData;
-// }
-// export default Data;
 export default value;
